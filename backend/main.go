@@ -14,6 +14,8 @@ func main() {
 
 	r := gin.Default()
 
+	r.Use(CORSMiddleware())
+
 	/*router := r.Group("")
 	{
 		
